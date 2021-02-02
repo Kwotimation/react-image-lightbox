@@ -10,7 +10,7 @@
     "start": "parcel examples/cats/index.html",
     "lint": "eslint .",
     "prettier": "prettier --write \"./**/*.{md,js,css}\" \"!./{build,dist}/**\" \"!./style.css*\"",
-    "prepublishOnly": "yarn run lint && yarn run test && yarn run build",
+    "prepublishOnly": "yarn run build",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "deploy": "yarn run build:demo && gh-pages -d build",
